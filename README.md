@@ -5,24 +5,22 @@ This is the SDK provided by DesktopAD, used in OS X.
 
 
 <h2>How to get start<h2/><br/>
------------------------------------------------------------
 
 <h3>Step 1: Create An account in DesktopAD<h3/><br/>
-	Goto <a herf="http://www.desktopad.com">DesktopAD</a>, and create an account with your real email address.<br/><br/>
+	Goto http://www.desktopad.com, and create an account with your real email address.<br/>
 
 <h3>Step 2: Create A new app<h3/><br/>
-	After you create a new app, you will get a appkey, the appkey uniquely identifies your app. It will be used in the SDK.<br/><br/>
+	After you create a new app, you will get a appkey, the appkey uniquely identifies your app. It will be used in the SDK.<br/>
 	
 <h3>Step 3: Download SDK<h3/><br/>
-	Download The SDK and install it in your application, then you can show ads in you apps and get bonus.<br/><br/>
+	Download The SDK and install it in your application, then you can show ads in you apps and get bonus.<br/>
 	
 
 <h2>How to Use the SDK<hr/><br>
------------------------------------------------------------
 
-<h3>First: Add files to your project<h3/><br/><br/>
+<h3>First: Add files to your project<h3/><br/>
 	
-<h3>Second: Add Webkit.framework to Link Binary With Libraries<h3/><br/><br/>
+<h3>Second: Add Webkit.framework to Link Binary With Libraries<h3/><br/>
 	
 <h3>Third: Set Appkey after finish lauch<h3/><br/><br/>
 	
@@ -31,7 +29,7 @@ This is the SDK provided by DesktopAD, used in OS X.
     	[DesktopAD setAppKey:@"appkey"];   //this app key is created in the website
 	}
 	
-<h3>Forth: Show Ads<h3/><br/><br/>
+<h3>Forth: Show Ads<h3/><br/>
 	
 	+ (NSView *)bannerAd_Landscape;
 	This function return a NSView of landscape banner ad, you can set the orignx and origny of the NSView, warning, if you change the bounds, the ads will not display normally.
