@@ -16,7 +16,7 @@ This is the SDK provided by DesktopAD, used in OS X.
 	Download The SDK and install it in your application, then you can show ads in you apps and get bonus.<br/>
 	
 
-<h2>How to Use the SDK<hr/><br>
+<h2>How to Use the SDK<h2/><br>
 
 <h3>First: Add files to your project<h3/><br/>
 	
