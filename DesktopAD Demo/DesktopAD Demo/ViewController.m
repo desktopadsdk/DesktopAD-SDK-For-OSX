@@ -15,13 +15,17 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    NSView *view = [DesktopAD bannerAd_Portrait];
-    [view setFrame:CGRectMake(100, 100, view.frame.size.width, view.frame.size.height)];
-    [self.view addSubview:view];
+    NSView *ad_portrait = [DesktopAD bannerAd_Portrait];
+    [ad_portrait setFrame:CGRectMake(100, 100, ad_portrait.frame.size.width, ad_portrait.frame.size.height)];
+    [self.view addSubview:ad_portrait];
     
-    NSView *view1 = [DesktopAD bannerAd_Landscape];
-    [view1 setFrame:CGRectMake(300, 100, view1.frame.size.width, view1.frame.size.height)];
-    [self.view addSubview:view1];
+    NSView *ad_landscape = [DesktopAD bannerAd_Landscape];
+    [ad_landscape setFrame:CGRectMake(300, 100, ad_landscape.frame.size.width, ad_landscape.frame.size.height)];
+    [self.view addSubview:ad_landscape];
+    
+    NSView *ad_halflandscape = [DesktopAD halfBannerAd_Landscape];
+    [ad_halflandscape setFrame:CGRectMake(300, 200, ad_halflandscape.frame.size.width, ad_halflandscape.frame.size.height)];
+    [self.view addSubview:ad_halflandscape];
     
     NSButton *button = [[NSButton alloc] initWithFrame:CGRectMake(300, 300, 150, 50)];
     [button setTarget:self];
