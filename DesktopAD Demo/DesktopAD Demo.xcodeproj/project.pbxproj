@@ -45,6 +45,7 @@
 		2D8FE2E31AB3DEB6004492B9 /* DesktopAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopAD.h; sourceTree = "<group>"; };
 		2D8FE2E41AB3DEB6004492B9 /* DesktopADlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = DesktopADlib.a; sourceTree = "<group>"; };
 		2D8FE2E51AB3DEB6004492B9 /* DesktopADPopupWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesktopADPopupWindow.xib; sourceTree = "<group>"; };
+		2DABDBF61AF869F3001E40C0 /* DesktopAD Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "DesktopAD Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		2D392F0A1AB12A2C00D0E72B /* DesktopAD Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2DABDBF61AF869F3001E40C0 /* DesktopAD Demo.entitlements */,
 				2D392F0D1AB12A2C00D0E72B /* AppDelegate.h */,
 				2D392F0E1AB12A2C00D0E72B /* AppDelegate.m */,
 				2D392F121AB12A2C00D0E72B /* ViewController.h */,
@@ -186,6 +188,11 @@
 				TargetAttributes = {
 					2D392F071AB12A2C00D0E72B = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					2D392F1D1AB12A2C00D0E72B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -353,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DesktopAD Demo/DesktopAD Demo.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DesktopAD Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -371,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DesktopAD Demo/DesktopAD Demo.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DesktopAD Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
