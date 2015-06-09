@@ -5,7 +5,7 @@
 //  Created by Coding on 14-12-8.
 //  Copyright (c) 2014年 DesktopAD. All rights reserved.
 
-//  SDK Version 1.3
+//  SDK Version 1.4
 
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
